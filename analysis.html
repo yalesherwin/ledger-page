@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sherwin ↔ Mamun 报表分析</title>
+  <style>
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif;background:#f3f6fb;margin:0;padding:24px;color:#1f2937}
+    .wrap{max-width:980px;margin:0 auto}
+    .card{background:#fff;border:1px solid #dbe3ef;border-radius:14px;padding:16px;margin-bottom:14px;box-shadow:0 6px 18px rgba(0,0,0,.05)}
+    h1{margin:0 0 8px}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+    .kpi{padding:12px;border-radius:10px;background:#0f172a;color:#fff}
+    .kpi .v{font-size:28px;font-weight:800}
+    table{width:100%;border-collapse:collapse}
+    th,td{border:1px solid #d1d5db;padding:8px;font-size:14px}
+    th{background:#eef2f7}
+    .up{color:#b91c1c;font-weight:700}.ok{color:#166534;font-weight:700}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <h1>报表分析（Sherwin ↔ Mamun）</h1>
+    <div>数据日期：2026-03-02（按你提供截图录入）</div>
+  </div>
+
+  <div class="card grid">
+    <div class="kpi"><div>总收款 Total Received</div><div class="v">$75,729</div></div>
+    <div class="kpi"><div>总返还 Total Returned</div><div class="v">$55,268</div></div>
+    <div class="kpi"><div>当前应收 Total Due</div><div class="v">$20,461</div></div>
+    <div class="kpi"><div>返还率 Returned %</div><div class="v">72.98%</div></div>
+  </div>
+
+  <div class="card">
+    <h3>核心结论</h3>
+    <ul>
+      <li>当前未结清金额为 <span class="up">$20,461</span>，占总收款的 <b>27.02%</b>。</li>
+      <li>整体返还率为 <span class="ok">72.98%</span>，资金回流水平中等，仍需加快尾款回收。</li>
+      <li>单笔确认项中，截图已明确显示 <b>TT Due = $3,113</b>，建议优先催收。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>风险与建议</h3>
+    <table>
+      <tr><th>风险点</th><th>当前表现</th><th>建议动作</th></tr>
+      <tr><td>应收集中度</td><td class="up">高（$20,461）</td><td>分三批催收：7天/14天/30天，设置明确截止日</td></tr>
+      <tr><td>汇率影响</td><td>历史用 7.00~7.10</td><td>后续对账固定“当日汇率+时间戳”</td></tr>
+      <tr><td>跨渠道记录</td><td>微信/账户/第三方转款并存</td><td>统一凭证编号，避免重复记账与漏记</td></tr>
+      <tr><td>尾款追踪</td><td class="up">TT Due 已存在</td><td>建立“到期前3天提醒+到期日提醒+逾期日报”</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h3>执行计划（可直接落地）</h3>
+    <ol>
+      <li>今天内发送对账确认函（附总账截图与应收明细）。</li>
+      <li>将 $20,461 拆分为可执行回款里程碑（例如 8,000 / 6,000 / 6,461）。</li>
+      <li>每周固定复盘回款率，并更新该页面数据。</li>
+    </ol>
+  </div>
+</div>
+</body>
+</html>
